@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import { StringsApp } from "../../assets/strings/stringsApp";
 import { Content } from "antd/es/layout/layout";
+import { Skills } from "../../components/skills";
 
 const imgStyle: React.CSSProperties = {
   display: "block",
@@ -110,11 +111,7 @@ export const AboutPage: React.FC = () => {
           <AboutMe>{StringsApp.aboutMe}</AboutMe>
         </ContentAbout>
         <ContentSkills>
-          <img
-            alt="avatar"
-            src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
-            style={imgStyle}
-          />
+          <Skills />
         </ContentSkills>
       </ContentStyled>
     </div>

@@ -3,6 +3,8 @@ import { Layout, Menu as AntMenu, theme } from "antd";
 import { useLocation, Link } from "react-router-dom";
 import logo from "../../assets/img/logodbdarkblue.png";
 import styled from "styled-components";
+import GithubIcon from "/src/assets/img/github.png";
+import LinkedinIcon from "/src/assets/img/linkedin.png";
 
 export const { Header, Content } = Layout;
 
@@ -48,6 +50,19 @@ export const StyledMenu = styled(AntMenu)`
 
 export const { Item } = StyledMenu;
 
+const IconGroup = styled.div`
+  display: flex;
+  align-items: center;
+  padding: 15px 200px 0 0;
+`;
+
+const IconButton = styled.a`
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin: 0 20px;
+`;
+
 const HeaderComponent: React.FC = () => {
   const location = useLocation();
 
@@ -75,6 +90,22 @@ const HeaderComponent: React.FC = () => {
             <Link to="/projetos">Projetos</Link>
           </Item>
         </StyledMenu>
+        <IconGroup>
+          <IconButton
+            href="https://github.com/clickfrancis"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={GithubIcon} alt="Github" />
+          </IconButton>
+          <IconButton
+            href="https://www.linkedin.com/in/franciscruzs/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={LinkedinIcon} alt="Linkedin" />
+          </IconButton>
+        </IconGroup>
       </HeaderStyled>
       <Layout>
         <Content
