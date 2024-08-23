@@ -1,0 +1,30 @@
+[
+  {
+    "img": "https://images.pexels.com/photos/159866/books-book-pages-read-literature-159866.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "titulo": "Crud Cursos",
+    "categoria": "Java, Spring boot, BackEnd",
+    "resumo": "Este projeto é uma API REST que permite cadastrar, consultar, atualizar e deletar alunos, curso e professor, além de vincular e desvicular aluno ao curso atráves da mátricula. O objetivo principal é testar...",
+    "href": "https://github.com/clickfrancis/crud-curso"
+  },
+  {
+    "img": "https://images.pexels.com/photos/268941/pexels-photo-268941.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "titulo": "App de clima",
+    "categoria": "React, TypeScript, FrontEnd",
+    "resumo": "Este projeto é uma aplicação de cadastro de metereológico, feito em React com TypeScript e usado biblioteca ant design, o projeto contém um crud com 3 páginas, cadastro, lista e atualização",
+    "href": "https://github.com/clickfrancis/desafio-clima-app"
+  },
+  {
+    "img": "https://images.pexels.com/photos/268941/pexels-photo-268941.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "titulo": "App de clima BackEnd",
+    "categoria": "Java, Spring boot, BackEnd",
+    "resumo": "Este projeto é uma api Rest de cadastro de metereológico, feito em Spring boot com java, o projeto é um crud, também pode listar buscando por cidade",
+    "href": "https://github.com/clickfrancis/desafio-clima"
+  },
+  {
+    "img": "https://images.pexels.com/photos/1111597/pexels-photo-1111597.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "titulo": "App jogo de dado",
+    "categoria": "Flutter, Mobile",
+    "resumo": "Esse projeto é um jogo de dado feito com Flutter e seus Widget de animação. Não foi necessário uso de pacote externo ou arquivos .GIF para realização das animações explícitas.",
+    "href": "https://github.com/clickfrancis/jogo_de_dado_flutter"
+  }
+]
