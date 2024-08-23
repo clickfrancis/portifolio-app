@@ -6,6 +6,7 @@ const { Text } = Typography;
 
 const StyledCard = styled(Card)`
   width: 306px;
+  background: #f5f5f5;
   &:hover,
   &:focus {
     box-shadow: 0px 4px 20px 0px #00000040;
@@ -22,8 +23,12 @@ const Titulo = styled.h4`
 `;
 
 const CategoryText = styled(Text)`
-  font-weight: bold;
   color: #ed177d;
+  font-family: TTSupermolot-Bold;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 17.29px;
+  text-align: left;
 `;
 
 const Resumo = styled(Text)`
@@ -35,17 +40,17 @@ const Resumo = styled(Text)`
   color: #292929;
 `;
 const Botao = styled(Button)`
-  width: 274px;
+  width: 255px;
   height: 44px;
   padding: 8px 16px;
   border-radius: 6px;
   opacity: 1;
-  background: transparent;
+  background: #201f53;
   box-shadow: none !important;
 `;
 
 const ButtonText = styled(Text)`
-  color: #414aba;
+  color: #ffffff;
   font-family: TTSupermolot-Bold;
   font-size: 18px;
   font-weight: 400;
@@ -59,7 +64,6 @@ interface CardProps {
   titulo?: string;
   categoria?: string;
   resumo?: string;
-  saibaMais?: string;
   href?: string;
 }
 
@@ -68,7 +72,6 @@ const CardComponent: React.FC<CardProps> = ({
   titulo,
   categoria,
   resumo,
-  saibaMais,
   href,
 }) => (
   <StyledCard hoverable cover={<img alt="example" src={img} />}>
@@ -85,7 +88,7 @@ const CardComponent: React.FC<CardProps> = ({
     </div>
     <div style={{ marginTop: 8 }}>
       <Botao type="primary" onClick={() => window.open(href, "_blank")}>
-        <ButtonText>{saibaMais}</ButtonText>
+        <ButtonText>Acessar</ButtonText>
       </Botao>
     </div>
   </StyledCard>
