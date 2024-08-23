@@ -45,7 +45,7 @@ export const ProjectsPage: React.FC = () => {
   const [projects, setProjects] = useState<ProjectsProps[]>([]);
 
   useEffect(() => {
-    fetch("/src/pages/projects/projects.json")
+    fetch("/projects.json")
       .then((response) => response.json())
       .then((data) => setProjects(data))
       .catch((err) => new Error("error ao carregar dados", err));
