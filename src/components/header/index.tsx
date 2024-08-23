@@ -60,12 +60,20 @@ const HeaderComponent: React.FC = () => {
         <StyledMenu
           theme="light"
           mode="horizontal"
-          defaultSelectedKeys={["2"]}
+          selectedKeys={[location.pathname]}
           style={{ flex: 1, minWidth: 0 }}
         >
-          <Item key="1">Sobre</Item>
-          <Item key="2">Currículo</Item>
-          <Item key="3">Projeto</Item>
+          <Item key="/">
+            <Link to="/">Sobre</Link>
+          </Item>
+          <Item key="/curriculo">
+            <Link to="https://drive.google.com/file/d/1CVucbR6zGSpCTT5EVSHB2fSq_iAtOAtA/view?usp=sharing">
+              Currículo
+            </Link>
+          </Item>
+          <Item key="/projetos">
+            <Link to="/projetos">Projetos</Link>
+          </Item>
         </StyledMenu>
       </HeaderStyled>
       <Layout>
