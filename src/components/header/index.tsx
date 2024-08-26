@@ -84,7 +84,10 @@ const HeaderComponent: React.FC = () => {
             <Link to="/">Sobre</Link>
           </Item>
           <Item key="/curriculo">
-            <Link to="https://drive.google.com/file/d/1CVucbR6zGSpCTT5EVSHB2fSq_iAtOAtA/view?usp=sharing">
+            <Link
+              to="https://drive.google.com/file/d/1-biNIcxgeTym58VhqSbiE4jYkVMlLqqH/view?usp=drive_link"
+              target="_blank"
+            >
               Currículo
             </Link>
           </Item>
