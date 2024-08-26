@@ -70,7 +70,9 @@ const HeaderComponent: React.FC = () => {
     <Layout>
       <HeaderStyled style={{ display: "flex", alignItems: "center" }}>
         <div className="logo">
-          <img src={logo} alt="Logo" style={{ padding: "25px 0 0 0" }} />
+          <a href="https://db.tec.br/" target="_blank">
+            <img src={logo} alt="Logo" style={{ padding: "25px 0 0 0" }} />{" "}
+          </a>
         </div>
         <StyledMenu
           theme="light"
