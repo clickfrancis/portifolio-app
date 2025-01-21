@@ -9,5 +9,5 @@ export const StringsApp = {
 
   wellcome: "Olá, meu nome é",
 
-  job: "Sou desenvolvedor fullstake jr na DBServer.",
+  job: "Sou desenvolvedor full stack jr na DBServer.",
 };
